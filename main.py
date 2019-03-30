@@ -23,8 +23,7 @@ def main():
     if does_satisfy:
         print("YES")
     else:
-        print("NO\n")
-        print(counter_example)
+        print(f"NO\n\n{counter_example}")
 
 if __name__ == "__main__":
     main()
