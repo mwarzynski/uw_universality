@@ -1,4 +1,4 @@
-from automata import Automata
+from automata import universality
 
 def parse_input():
     def from_line():
@@ -15,11 +15,8 @@ def parse_input():
     return words, states, states_initial, states_finite, transitions, n
 
 def main():
-    data = list(parse_input())
-    description = data[:-1]
-    n = data[-1]
-    automata = Automata(*description)
-    does_satisfy, counter_example = automata.universality(n)
+    args = list(parse_input())
+    does_satisfy, counter_example = universality(*args)
     if does_satisfy:
         print("YES")
     else:
