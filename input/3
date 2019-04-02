@@ -1,0 +1,17 @@
+2 5 1 2 10
+a b
+A B C D E
+A
+D E
+A a B
+A a C
+A b B
+A b C
+B a B
+B b B
+C a C
+C b C
+B a D
+C b E
+10
+
