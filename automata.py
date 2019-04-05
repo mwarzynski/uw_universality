@@ -42,7 +42,7 @@ def universality(symbols, states, states_initial, states_final, transitions, n):
 
     solver = Solver()
     solver.add(constraints)
-    if solver.check() == unsat:
+    if n <= 0 or solver.check() == unsat:
         return True, ""
     model = solver.model()
 
