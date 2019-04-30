@@ -2,7 +2,7 @@ from automata import universality
 
 def parse_input():
     def from_line():
-        return input().split(" ")
+        return input().split()
     _, _, _, _, m = map(int, from_line())
     words = list(from_line())
     states = list(from_line())
